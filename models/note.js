@@ -57,6 +57,10 @@ const noteSchema = new mongoose.Schema({
     required: true,
   },
   important: Boolean,
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    red: 'User'
+  }
 })
 
 noteSchema.set('toJSON', {
