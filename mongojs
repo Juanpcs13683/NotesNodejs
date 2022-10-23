@@ -1,0 +1,83 @@
+
+//const mongoose = require('mongoose')
+/*
+if (process.argv.length < 3){
+    console.log('Please provide the password as an argument: node mongo.js <password>')
+    process.exit(1)
+}
+
+//const password = process.argv[2]
+
+
+//const url = `mongodb+srv://admin:${password}@cluster0.mpathsm.mongodb.net/noteApp?retryWrites=true&w=majority`
+
+//let's define a schema for a new object and save is to let us use it forward
+
+const noteSchema = new mongoose.Schema({
+    content: String,
+    date: Date,
+    important: Boolean,
+})
+
+//let's save the schema to Note const 
+//const Note = mongoose.model('Note', noteSchema)
+
+
+//let's connects to mongoose and send a new note with info it'll create a new database and it also has event handlers
+mongoose
+.connect(url)
+.then((result) => {
+    console.log('connected')
+
+    // const note = new Note({
+    //     content: 'Something else',
+    //     date: new Date(),
+    //     important: true,
+    // })
+
+    // return note.save()
+
+     ////-------  Fetching objects this will retrieve all the objects stored in notes collection
+//  Note.find({}).then(result => {
+//     result.forEach(note => {
+//         console.log(note)
+//     })
+//     mongoose.connection.close()
+//  })
+
+
+//searching only important notes
+Note.find({ important:false }).then(result =>{
+    result.forEach(note=> {
+        console.log(note)
+    })
+    mongoose.connection.close()
+})
+
+    
+})
+// .then(() => {
+//     console.log('note saved this is the first one')
+//     return mongoose.connection.close()
+// })
+.catch((error) => console.log(error))
+
+//let's create a new note to save it then with the command save
+// const note = new Note({
+//     content: 'HTML is Easy',
+//     date: new Date(),
+//     important: false,
+// })
+
+
+// //lets send a new entrie to the database with "save" method and loggin the result
+// note.save().then(result => {
+//     console.log('note saved! this is the  second one')
+//    mongoose.connection.close()
+// })
+
+
+ // don't forget to always close the connection to finish the execution
+
+
+*/

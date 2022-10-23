@@ -1,0 +1,39 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "VS Code REST client is pretty good",
+    "important": false
+}
+
+###
+GET http://localhost:3001/api/notes/634b6a7b4f8800d8cab90725
+
+###
+GET http://localhost:3001/api/notes/634b6a0a98be67eeaae8936
+
+
+###
+
+DELETE http://localhost:3001/api/notes/634b6a0a98be67eeaae8936c
+
+###
+GET http://localhost:3001/api/notes
+
+###
+PUT http://localhost:3001/api/notes/634b6a7b4f8800d8cab90725
+Content-Type: application/json
+
+{
+    "content": "VS Code REST client is pretty good",
+    "important": true
+}
+
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content" : "lol",
+    "important": true
+}
